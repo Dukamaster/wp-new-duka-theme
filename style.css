@@ -1,0 +1,20 @@
+/*
+Theme Name: Duka Web
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: duka
+Tags:
+*/
+body {
+  background-color: #ececec;
+  font-size: 17px;
+  font-size: 1rem;
+  line-height: 1.6211;
+  font-family: Roboto;
+  color: #212121;
+}
