@@ -29,6 +29,20 @@ Simply delete the next lines of code below (line 35-36) if you don't want to use
 	wp_register_script('material-js', get_template_directory_uri() . '/js/material.min.js', false, null, true);
 	wp_enqueue_script('material-js');
 
+	//Add ripples
+	wp_register_style('ripples-css', get_template_directory_uri() . '/css/ripples.min.css', false, null);
+	wp_enqueue_style('ripples-css');
+	wp_register_script('ripples-js', get_template_directory_uri() . '/js/ripples.min.js', false, null, true);
+	wp_enqueue_script('ripples-js');
+
+	//Add font
+	wp_register_style('material-wfont-css', get_template_directory_uri() . '/css/material-wfont.min.css', false, null);
+	wp_enqueue_style('material-wfont-css');
+
+	//Add customize css
+	wp_register_style('duka-customise-css', get_template_directory_uri() . '/css/customize.css', false, null);
+	wp_enqueue_style('duka-customise-css');
+
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}

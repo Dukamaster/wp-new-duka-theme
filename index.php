@@ -21,4 +21,4 @@
 		</div><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_template_part('parts/footer'); ?>

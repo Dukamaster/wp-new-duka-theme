@@ -15,6 +15,34 @@
 <?php	wp_head(); ?>
 </head>
 <body>
-  <nav class="navbar navbar-inverse" role="navigation">
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'navbar-header' ) ); ?>
-  </nav>
+	<div class="header-panel shadow-z-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-4">
+	        <h1>
+	        	<a title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">
+	            <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>"/>
+	          </a>
+	         </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="navbar navbar-default">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	  </div>
+	  <div class="navbar-collapse collapse navbar-responsive-collapse'">
+	  	<?php wp_nav_menu( array( 
+    	'theme_location' => 'header-menu', 
+    	'container' => 'none',
+    	'menu_class'	=> 'nav navbar-nav' 
+    ) ); ?>	
+	  </div>
+	</div>
+ 
+
