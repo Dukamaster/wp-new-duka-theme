@@ -12,6 +12,8 @@
 
 			<?php endwhile; ?>
 
+			<?php pagination(); ?>
+
 		<?php else : ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>

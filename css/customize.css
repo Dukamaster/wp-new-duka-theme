@@ -8,5 +8,39 @@
 }
 .thumbnail img {
 	width: 100%;
+	height: 201px;
 	max-height: 201px;
+}
+.post {
+	margin-top: 20px;
+}
+.post h2 {
+	margin: 0 0 5px;
+	font-size: 18px;
+	line-height: 1.6em;
+	font-weight: 600;
+	/*text-transform: uppercase;*/
+	text-align: center;
+}
+.post h2 a {
+	color: #3b3d42;
+}
+
+.post h2 a:hover {
+	color: #009587;
+	text-decoration: none;
+}
+
+.post .caption, .caption a, .post-footer a {
+	color: #999999;
+}
+
+.post-footer {
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #999999;
+}
+
+.post-footer .pull-right {
+	padding-right: 20px;
 }

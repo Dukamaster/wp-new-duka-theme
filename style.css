@@ -18,3 +18,8 @@ body {
   font-family: Roboto;
   color: #212121;
 }
+
+a:hover {
+	color: #00bac4;
+	text-decoration: none;
+}
