@@ -4,36 +4,26 @@
  */
 ?>
 
-<div id="post-<?php the_ID(); ?>" class="col-sm-4 post" style="height:350px;">
+<div id="post-<?php the_ID(); ?>" class="col-lg-4 col-md-6 col-sm-6 col-xs-12 post">
 	<div class="thumbnail panel">
-		<?php
-      if ( has_post_thumbnail() )
-      {
-        the_post_thumbnail( 'full', array( 'alt' => get_the_title(),
-           'title' => get_the_title(), 'class'=>'img-responsive') );
-      }
-      else {
-        echo '<img class="img-responsive" src="http://placehold.it/700x400" alt="">';
-      }
-    ?>
     <div class="caption">
-      <?php the_title( sprintf( '<h2 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-      <i class="mdi-action-loyalty"></i>
-      <?php the_category( ', ' ); ?>
-<!--       <span>
-        <?php the_tags( '#', ' #', '<br />' ); ?>  
-      </span>
- -->      
+      <div class="panel-body">
+        <?php the_title( sprintf( '<h2 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+        <div>
+          <i class="mdi-social-person"></i>
+          <a rel="author" href="<?php the_author_link(); ?>"><?php the_author(); ?></a>
+        </div>
+        <div>
+          <i class="mdi-action-loyalty"></i>
+        <?php the_category( ', ' ); ?>
+        </div>
+      </div>
     </div>
 
-    <div class="post-footer">
-      <i class="mdi-social-person"></i>
-      <span class="author vcard">
-        <a rel="author" href="<?php the_author_link(); ?>"><?php the_author(); ?></a>
-      </span>
+    <div class="panel-footer">
       <i class="mdi-device-access-time"></i>
       <time datetime="2014-12-06T04:56:17+00:00"><?php the_date(); ?></time>
-      
+
       <p class="pull-right">
         <i class="fa fa-comment-o"></i>
         <?php
@@ -43,7 +33,6 @@
           }
         ?>
       </p>
-      
     </div>
   </div>
 
