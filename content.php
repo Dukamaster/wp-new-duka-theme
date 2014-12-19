@@ -15,7 +15,7 @@
         </div>
         <div>
           <i class="mdi-action-loyalty"></i>
-        <?php the_category( ', ' ); ?>
+          <?php the_category( ', ' ); ?>
         </div>
       </div>
     </div>
