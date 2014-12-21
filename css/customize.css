@@ -28,3 +28,11 @@
 .post .caption, .caption a, .post-footer a {
 	color: #999999;
 }
+
+.article-header .article-time {
+	color: #949494;
+}
+
+.article-body {
+	font-size: 16px;
+}

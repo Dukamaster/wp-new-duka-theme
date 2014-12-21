@@ -20,7 +20,7 @@
 
 		<?php endif; ?>
 
-		</div><!-- #main -->
-	</div><!-- #primary -->
+		</div>
+	</div>
 
 <?php get_template_part('parts/footer'); ?>
