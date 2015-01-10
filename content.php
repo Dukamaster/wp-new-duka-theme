@@ -22,7 +22,8 @@
 
     <div class="panel-footer">
       <i class="mdi-device-access-time"></i>
-      <time datetime="<?php the_date('Y-m-d hh:mm:ss'); ?>"><?php the_date(); ?></time>
+
+      <time datetime="<?php the_date('Y-m-d hh:mm:ss'); ?>"><?php echo get_the_date(); ?></time>
 
       <p class="pull-right">
         <i class="fa fa-comment-o"></i>
