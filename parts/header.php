@@ -17,7 +17,7 @@
 	<div class="header-panel shadow-z-2">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-md-offset-4">
+        <div class="col-md-8 col-md-offset-4">
 	        <h1>
 	        	<a title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">
 	            <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>"/>

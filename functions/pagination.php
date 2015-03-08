@@ -18,7 +18,7 @@ function pagination() {
 
   if( is_array( $pages ) ) {
     $paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
-    echo '<div class="col-md-12"><ul class="pagination pagination-lg">';
+    echo '<div class="col-xs-12"><ul class="pagination pagination-lg">';
     foreach ( $pages as $page ) {
       if (strpos($page, "$paged") !== false) {
         echo "<li class='active'>$page</li>";
