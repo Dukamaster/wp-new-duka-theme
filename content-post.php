@@ -9,9 +9,9 @@
 				<header class="article-header">
 					<h1 class="post-title entry-title"><?php the_title(); ?></h1>
 					<!-- Author -->
-		      <p class="lead">
+<!-- 		      <p class="lead">
 		          by <a href="#"><?php the_author(); ?></a>
-		      </p>
+		      </p> -->
 		      <p class="article-time"><i class="mdi-device-access-time"></i> Post on <?php the_date(); ?> at <?php the_time(); ?></p>
 				</header>
 				<hr>
