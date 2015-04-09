@@ -10,6 +10,15 @@ function dukaweb_widgets_init() {
     'before_title' => '',
     'after_title' => '',
   ) );
+  register_sidebar( array(
+    'name' => 'Ads sidebar',
+    'id' => 'ads-sidebar',
+    'description' => 'Appears in the sidebar',
+    'before_widget' => '<div id="%2$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '',
+    'after_title' => '',
+  ) );
 }
 add_action('widgets_init', 'dukaweb_widgets_init');
 
