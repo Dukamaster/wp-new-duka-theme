@@ -15,12 +15,12 @@ function special_nav_class($classes, $item){
 }
 
 //Add search box to menu
-add_filter('wp_nav_menu_items','my_search_form');
-function my_search_form($items){
-  $form = '<form role="search" method="get" class="navbar-form navbar-right" action="' . home_url( '/' ) . '" >
-		<input type="text" class="form-control col-lg-8" placeholder="Search" required value="' . get_search_query() . '" name="s" id="s" />
-		<span class="material-input"></span>
-		</form>';
+// add_filter('wp_nav_menu_items','my_search_form');
+// function my_search_form($items){
+//   $form = '<form role="search" method="get" class="navbar-form navbar-right" action="' . home_url( '/' ) . '" >
+// 		<input type="text" class="form-control col-lg-8" placeholder="Search" required value="' . get_search_query() . '" name="s" id="s" />
+// 		<span class="material-input"></span>
+// 		</form>';
 
-  return $items . $form;
-}
+//   return $items . $form;
+// }

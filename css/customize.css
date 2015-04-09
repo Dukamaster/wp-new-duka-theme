@@ -36,3 +36,36 @@
 .article-body {
 	font-size: 16px;
 }
+
+.container-fluid {
+	padding-left: 5%;
+	padding-right:5%;
+}
+
+.navbar-collapse {
+	padding-left: 0;
+}
+
+.container-fluid > .navbar-collapse {
+	margin-left: -15px;
+}
+
+h1.post-title {
+	text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+   text-align: right;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: right;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: right;  
+}
+
+:-ms-input-placeholder {  
+   text-align: right; 
+}

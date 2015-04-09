@@ -28,7 +28,8 @@
     </div>
   </div>
 
-	<div class="navbar navbar-default">
+	<nav class="navbar navbar-default">
+    <div class="container-fluid">
 	  <div class="navbar-header">
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 	      <span class="icon-bar"></span>
@@ -37,11 +38,16 @@
 	    </button>
 	  </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
-      <?php wp_nav_menu( array(
-        'theme_location' => 'header-menu',
-        'container' => 'none',
-        'menu_class' => 'nav navbar-nav'
-      ) ); ?>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'header-menu',
+          'container' => 'none',
+          'menu_class' => 'nav navbar-nav'
+        ) ); ?>
+        <form role="search" method="get" class="navbar-form navbar-right" action="<?php echo home_url( '/' ); ?>" >
+          <input type="text" class="form-control col-lg-8" placeholder="Search" required value="<?php echo get_search_query(); ?>" name="s" id="s" />
+          <span class="material-input"></span>
+      </form>
     </div>
-  </div>
+    </div>
+  </nav>
 
