@@ -1,4 +1,4 @@
-<div class="col-lg-8">
+<div class="col-lg-9">
 	<?php if ( function_exists('yoast_breadcrumb') ) {
     $breadcrumbs = yoast_breadcrumb( '<ol class="breadcrumb"><li>', '</li></ol>', false );
     echo str_replace( '|', ' <span class="divider">/</span></li><li>', $breadcrumbs );
