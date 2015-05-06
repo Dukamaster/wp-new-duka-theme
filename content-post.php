@@ -2,7 +2,7 @@
 	<?php if ( function_exists('yoast_breadcrumb') ) {
     $breadcrumbs = yoast_breadcrumb( '<ol class="breadcrumb"><li>', '</li></ol>', false );
     echo str_replace( '|', ' <span class="divider">/</span></li><li>', $breadcrumbs );
-  } ?>	
+  } ?>
 	<div class="panel panel-body">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" itemscope="" itemtype="http://schema.org/BlogPosting">

@@ -8,8 +8,8 @@
 
 <?php get_template_part('parts/header'); ?>
 
-<div class="container-fluid">
-	<div class="row">	
+<div class="container">
+	<div class="row">
 		<?php get_template_part( 'content', 'post' ); ?>
 		<?php get_sidebar(); ?>
 	</div>

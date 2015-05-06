@@ -1,6 +1,6 @@
 .header-panel {
 	background-color: #fff;
-	height: 144px;
+	height: 10%;
 }
 .thumbnail {
 	height: 95%;
@@ -37,17 +37,8 @@
 	font-size: 16px;
 }
 
-.container-fluid {
-	padding-left: 5%;
-	padding-right:5%;
-}
-
 .navbar-collapse {
 	padding-left: 0;
-}
-
-.container-fluid > .navbar-collapse {
-	margin-left: -15px;
 }
 
 h1.post-title {
@@ -59,13 +50,13 @@ h1.post-title {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   text-align: right;  
+   text-align: right;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   text-align: right;  
+   text-align: right;
 }
 
-:-ms-input-placeholder {  
-   text-align: right; 
+:-ms-input-placeholder {
+   text-align: right;
 }

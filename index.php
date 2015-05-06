@@ -1,6 +1,6 @@
 <?php get_template_part('parts/header'); ?>
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 
 		<?php if ( have_posts() ) : ?>

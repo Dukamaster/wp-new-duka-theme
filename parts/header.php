@@ -14,22 +14,8 @@
 <?php	wp_head(); ?>
 </head>
 <body>
-	<div class="header-panel shadow-z-2">
+	<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-	        <h1>
-	        	<a title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">
-	            <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>"/>
-	          </a>
-	         </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-
-	<nav class="navbar navbar-default">
-    <div class="container-fluid">
 	  <div class="navbar-header">
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 	      <span class="icon-bar"></span>
@@ -51,3 +37,16 @@
     </div>
   </nav>
 
+	<div class="page-header header-panel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+	        <h1>
+	        	<a title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>">
+	            <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>"/>
+	          </a>
+	         </h1>
+        </div>
+      </div>
+    </div>
+  </div>
