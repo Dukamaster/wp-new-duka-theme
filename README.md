@@ -1,2 +1,3 @@
 # wp-new-duka-theme
-My Duka website template
+
+The template of http://dukaweb.net website
